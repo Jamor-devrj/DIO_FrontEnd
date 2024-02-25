@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas em HTML</title>
+
+   <!--CSS interno-->
+   <style>
+        table {
+            -webkit-box-shadow: 9px 9px 25px -7px rgba(0,0,0,0.52);
+            -moz-box-shadow: 9px 9px 25px -7px rgba(0,0,0,0.52);
+            box-shadow: 9px 9px 25px -7px rgba(0,0,0,0.52);
+            border: 1px solid lightgray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+            justify-content: left;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr:nth-child(even){  /* preenche apenas as tr par */
+            background-color: #f1f1f1;
+        }        
+        table tbody tr:hover td { /* muda a cor do td quando passa o mouse por cima */
+            background-color: #e9e9e9;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <table width="250" cellspacing="0" cellpadding="5" align="center">
+        
+        <!--<caption>Tabela de idades dos alunos da Dio.me</caption>-->
+        <thead>
+                <tr>
+                    <th colspan="2">Minha tabela</th>
+
+                </tr>
+                <tr>
+                    <th title="Nome Completo">Nome</th>
+                    <th title="Idade">Idade</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>Jaime</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Antonio</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td>Jefferson</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>Jeane</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td>Lúcia</td>
+                    <td>64</td>
+                </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
