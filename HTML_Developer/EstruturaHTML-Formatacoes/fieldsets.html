@@ -12,10 +12,10 @@
             margin: 5px;
         }
         label {
-            width:100px;
-            text-align: right;
+            width:400px;
+            text-align: left;
             display: inline-block;
-            padding-right: 5px;
+            padding-top:5px;
         }
         fieldset{
             margin: 10px;
@@ -30,19 +30,20 @@
 
 <body>
     <h1>Formulário de Cadastro</h1>
-
     <fieldset>
-        <legend>Dados Pessoais</legend>
+        <legend>Fale conosco</legend>
         <div class="row">
-            <label>Nome:</label><input type="text" />
-            <label>E-mail:</label><input type="text" />        
-        </div>
-    
-        <div class="row">
-            <label>Profissão:</label><input type="text" />
-            <label>Empresa:</label><input type="text" />        
-        </div>
-    </fieldset>
+            <label>Nome:</label><br>
+            <input type="text" width="200" /><br>
+            <label>E-mail:</label><br>
+            <input type="text" /><br>   
+            <label>Assunto:</label><br>
+            <input type="text" /><br>        
+            <label>Mensagem:</label> <br>
+            <textarea name="message" cols="30" rows="10"></textarea><br>    
+        </div>  
+     </fieldset>
+
     <fieldset>
         <legend>Endereço</legend>
         <div class="row">
