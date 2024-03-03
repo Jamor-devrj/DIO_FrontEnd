@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Met, initial-scale=1.0">
+    <title>Meter & Progress</title>
+</head>
+<body>
+    <meter max="100" min="0" value="65"></meter>
+    <progress id="progress" max="100" min="0" value="0"></progress>
+
+    <script>
+        var progress = document.getElementById('progress');
+        const interval = setInterval(() => {
+            progress.value += 0.5;  
+            if(progress.value >= 100)          {
+                alert('Carregamento realizado com sucesso')
+                clearInterval(interval);
+            }
+        }, 100);
+    </script>
+    
+</body>
+</html>
