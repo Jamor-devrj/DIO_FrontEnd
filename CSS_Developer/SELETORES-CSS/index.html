@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>        
+        /* seletores por 
+        h1{
+            background: darkblue;
+            color: lightgreen;
+        }
+        div {
+            background: lightblue;
+            color: darkblue;
+        }
+        li {
+            background: lightgreen;
+        }*/
+
+        /* seletor por universal */
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* seletor por id */
+        #texto-boas-vindas {
+            background: red;
+            color: white;
+        }
+
+        /* seletor por class */
+        .seletores-mais-usados {
+            color: red;
+        }
+        .texto-maiusculo {
+            text-transform: uppercase;
+        }
+         /* seletor por atributo  */
+         [title="Netflix"] {
+             color: red;
+         }
+         [title="Prime"] {
+             color: darkblue;
+         }
+         [title="Spotify"] {
+             color: green;
+         }
+         
+
+    </style>
+
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem-Vindo!</p>
+    <p id="explicacao-seletores">No CSS nós possuímos os seletores por ID</p>
+    <div>
+        <ul>
+            <li class="seletores-mais-usados texto-maiusculo"><b>Seletor por tipo:</b> Busca elementos por uma tag HTML específica</li>            
+            <li class="seletores-mais-usados texto-maiusculo"><b>Seletor por ID (#):</b> Busca elementos através do atributo "id"</li>
+            <li class="seletores-mais-usados"><b>Seletor por Classe (.):</b> Busca elementos através do atributo "class"</li>
+            <li><b>Seletor Universal (*):</b> Seleciona todos os elementos HTML</li>
+            <li class="texto-maiusculo"><b>Seletor de Atributo([atrib]):</b> Seleciona elementos que possuem um atributo específico no documento HTML e conseguimos também buscar atributos com um valor específico</li>
+        </ul>
+        <br>
+        <ul>
+            <li>
+                <a title="Netflix" href="https://netflix.com">Netflix</a>
+            </li>
+            <li>
+                <a title="Prime" href="https://primevideo.com">Prime Vídeo</a>
+            </li>
+            <li>
+                <a title="Spotify" href="https://spotify.com">Spotify</a>
+            </li>
+            <li>
+                <a>Disney Plus</a>
+            </li>
+        </ul>
+    </div>    
+</body>
+</html>

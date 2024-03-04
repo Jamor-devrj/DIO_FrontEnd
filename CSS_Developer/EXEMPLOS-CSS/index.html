@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha de CSS</title>
+    <style>
+        .h1-interno{
+            background: purple;   
+            color: white;         
+        }
+        .h2-interno{
+            color: purple;            
+        }     
+    </style>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
+    <!------CSS Externo------>
+
+    <h1 class="h1-externo"> DIO - Digital Innovation One</h1>
+    <h2 class="h2-externo">CSS - Externo</h2>
+    <p>Muito utilizado nos projetos e pode estilizar varias paginas</p>
+
+    <!------------------------------------------------------------------------------->
+    <!------CSS interno------>
+
+    <h1 class="h1-interno"> DIO - Digital Innovation One</h1>
+    <h2 class="h2-interno">CSS - interno</h2>
+    <p>Esse modo é aplicado todas as regras denttro do head com a tag style</p>
+
+    <!------------------------------------------------------------------------------->
+
+
+    <!------CSS inLine------>
+
     <h1 style="background: red; color: white;"> DIO - Digital Innovation One</h1>
-    <h2 style="color: red;">Trilha de CSS</h2>   
+    <h2 style="color: green">CSS - inLine</h2>
+    <p>Esse modo é menos utilizada em grandes projetos devido a dificuldade de manutenção</p>
+
+    <!------------------------------------------------------------------------------->
+
+
+
 </body>
 </html>
