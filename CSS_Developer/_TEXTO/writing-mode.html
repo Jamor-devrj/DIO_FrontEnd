@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>word-wrap</title>
+    <style>
+        .exemplo {
+            width: 120px;
+            height: 120px;
+            color: black;
+            background-color: chartreuse;
+        }        
+
+        #horizontal-tb {
+            writing-mode: horizontal-tb;
+        }
+        #vertical-lr {
+            writing-mode: vertical-lr;
+        }
+        #vertical-rl {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>writing-mode</code></h1>
+    <p>Define a orientação do texto (vetical ou horizontal).</p>
+    <i>Exemplo:</i><br><br>
+
+    <code>writing-mode: horizontal-tb;</code> (valor padrão) 
+    <p id="horizontal-tb" class="exemplo">
+        Chega de saudade A realidade é que sem ela não há paz
+    </p>      
+
+    <code>writing-mode: vertical-lr;</code> 
+    <p id="vertical-lr" class="exemplo">
+        Chega de saudade A realidade é que sem ela não há paz
+    </p>      
+
+    <code>writing-mode: vertical-rl;</code> 
+    <p id="vertical-rl" class="exemplo">
+        Chega de saudade A realidade é que sem ela não há paz
+    </p>
+</body>
+</html>

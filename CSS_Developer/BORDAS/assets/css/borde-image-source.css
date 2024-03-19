@@ -1,0 +1,25 @@
+* {
+    font-family: Roboto, sans-serif;
+}        
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;  
+    border: 30px solid;
+    margin: 50px auto;
+}
+
+#exemplo-resumido {
+    border-image: url('../img/borda.png') 169 / 10px 20px / 1 2 round;
+}
+
+#exemplo-1 {
+    border-image-source: url('../img/borda.png');    
+    border-image-repeat: round;
+    border-image-slice: 169;   
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(rgb(0, 119, 255), rgb(0, 170, 255));
+    border-image-slice: 10;    
+}
