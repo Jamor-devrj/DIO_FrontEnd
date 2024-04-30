@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static</title>
+    <style>
+        body{
+            font-family: Roboto, sans-serif;
+            height: 200vh;
+        }
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+    
+        }
+        #elemento-1{
+            background-color: orange;
+            left: 30px;
+            top: 50px;            
+            z-index: 6;
+        }
+        #elemento-2{
+            background-color: palevioletred;
+            left: 60px;
+            top: 70px;
+            z-index: 5;
+        }
+        #elemento-3{
+            background-color: palegreen;
+            left: 90px;
+            top: 90px;
+            z-index: 4;
+        }
+        #elemento-4{
+            background-color: paleturquoise;
+            left: 120px;
+            top: 110px;
+            z-index: 3;
+        }
+        #elemento-5{
+            background-color: violet;
+            left: 150px;
+            top: 130px;
+            z-index: 2;
+        }
+        #elemento-6{
+            background-color: blueviolet;
+            left:180px;
+            top: 150px;
+            z-index: 1;
+        }
+        .inline {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade z-index</h1>
+
+    <div id="elemento-1" class="exemplo">Elemento 01</div>
+    <div id="elemento-2" class="exemplo">Elemento 02</div>
+    <div id="elemento-3" class="exemplo">Elemento 03</div>
+    <div id="elemento-4" class="exemplo">Elemento 04</div>
+    <div id="elemento-5" class="exemplo">Elemento 05</div>
+    <div id="elemento-6" class="exemplo">Elemento 06</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display block</title>
+    <style>
+        body{
+            font-family: Roboto, sans-serif;
+        }
+        .exemplo {
+            background-color: palevioletred;
+        }
+        .inline-block {
+            display: inline-block;
+            width: 120px;
+            height: 50px;            
+            padding: 30px 40px 2px;
+            text-align: center;
+        }
+        .menu {
+            background-color: plum;
+        }
+        .menu  ul li{
+            display: inline-block;   
+            padding: 20px 40px;
+        }
+        .menu  ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .esconder-elemento{
+            display: none;
+        }
+        #item05{
+            visibility: hidden;            
+        }
+        #item02{
+           display: none;
+        }
+
+        #item-01 {
+            height: 50px;
+        }
+        #item-02 {
+            text-align: center;   
+            vertical-align: top;         
+        }
+        .container {
+            border: 1px solid red;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+
+    <code>display: block</code>   
+    <br><br>
+    <div class="exemplo">elemento <strong>"DIV"</strong></div>
+    <p class="exemplo">
+        ESTE É UM "P" <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit quis nam dolorem quasi molestias magni eos corporis facilis sequi, eius veritatis quos nesciunt laboriosam necessitatibus maiores consectetur qui quam.
+    </p>
+
+    
+    <code>display: inline;</code>
+    <br><br>
+    <span class="exemplo">exemplo span 1</span>
+    <span class="exemplo">exemplo span 2</span>
+    <em class="exemplo">exemplo "em"</em>
+    <b class="exemplo">exemplo "b"</b>
+
+    <p class="exemplo" style="display: inline;">   
+        Lorem
+    </p>
+
+    <br><br>
+    <code>display: inline-block;</code>
+    <br><br>
+
+    <span class="exemplo inline-block">exemplo span 1</span>
+    <em class="exemplo inline-block">exemplo "em"</em>
+    <b class="exemplo inline-block">exemplo "b"</b>
+
+    <br><br>
+    <code>display: none;</code>
+    <br><br>
+    
+    <div class="exemplo esconder-elemento">Exemplo 01</div>
+    
+    <br>
+    <h3>display: none Vs visibility: hidden</h3>
+
+    <div>
+        <spam id="item" class="exemplo">Item 01</spam>
+        <spam id="item" class="exemplo">Item 02</spam>
+        <spam id="item" class="exemplo">Item 03</spam>
+    </div>
+    <br>
+    <code>display: none;</code>
+    <div>
+        <spam id="item01" class="exemplo">Item 01</spam>
+        <spam id="item02" class="exemplo">Item 02</spam>
+        <spam id="item03" class="exemplo">Item 03</spam>
+    </div>
+    <br>
+    <code>visibility: hidden;</code>
+    <div>
+        <spam id="item04" class="exemplo">Item 01</spam>
+        <spam id="item05" class="exemplo">Item 02</spam>
+        <spam id="item06" class="exemplo">Item 03</spam>
+    </div>  
+
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 01</a></li>
+            <li><a href="#">Meu link 02</a></li>
+            <li><a href="#">Meu link 03</a></li>
+        </ul>
+    </nav>
+
+    <h3>Alinhando elementos inline</h3>
+
+    <div class="container">
+        <img id="item-01" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png?20210403190622" alt="">
+        <span id="item-02" class="exemplo">Item 02</span>
+        <span id="item-03" class="exemplo">Item 03</span>
+    </div>
+
+</body>
+</html>

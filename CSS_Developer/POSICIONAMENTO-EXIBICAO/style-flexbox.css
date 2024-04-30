@@ -1,0 +1,41 @@
+.container {
+    background: palegreen;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.container2 {
+    background: palegoldenrod;
+    /*padding: 20px;*/
+    margin: 20px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.item {
+    background: orange;
+    margin: 10px;
+}
+.item02 {
+    background: palevioletred;
+    
+}
+
+#container-01{
+    flex-direction: row;
+}
+#container-02{
+    flex-direction: column;
+    height: 300px;
+}
+#container-03{
+    flex-direction: row;
+}
+#container-04{
+    flex-direction: column;
+    height: 300px;
+}
